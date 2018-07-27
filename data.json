@@ -4,5 +4,24 @@
 		"image":"gh.jpg",
 		"phone":"1122334455",
 		"email":"harikaginjupalli@gmail.com"
-	}
+	},
+
+"education":[
+{
+	"course":"B.Tech(CSE)",
+	"college":"MIC college",
+	"per":"93.4"
+
+},
+{
+	"course":"Intermediate(MPC)",
+	"college":"Sri chaitanya college",
+	"per":"94.2"
+},
+{
+	"course":"SSC",
+	"college":"new vision",
+	"per":"98"
+}
+]
 }
