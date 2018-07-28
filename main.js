@@ -83,6 +83,7 @@ function carr(career){
 	var head1=document.createElement("h1");
 	head1.textContent="career Objective";
 	right.appendChild(head1);
+	head1.appendChild(document.createElement("HR"));
 	var para=document.createElement("p");
 	para.textContent=career.text;
     right.appendChild(para);
