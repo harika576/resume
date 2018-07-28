@@ -12,8 +12,13 @@ function loadjson(file,callback){
 loadjson("data.json",function(text){
 	let data=JSON.parse(text);
 	console.log(data);
+	carr(data.Career);
+
 	basic(data.details);
 	edu(data.education);
+	skill(data.skills);
+
+
 
 })
 var main=document.querySelector(".main");
@@ -24,13 +29,13 @@ function basic(MIC){
 var image=document.createElement("img");
 image.src=MIC.image;
 left.appendChild(image);
-var name=document.createElement("h3");
+var name=document.createElement("h2");
 name.textContent=MIC.name;
 left.appendChild(name);
-var email=document.createElement("h3");
+var email=document.createElement("h2");
 email.textContent=MIC.email;
 left.appendChild(email);
-var phone=document.createElement("h3");
+var phone=document.createElement("h2");
 phone.textContent=MIC.phone;
 left.appendChild(phone);
 }
@@ -39,10 +44,15 @@ var right=document.createElement("div");
 right.classList.add("right");
 main.appendChild(right);
 function edu(education){
-var un=document.createElement("un");
-right.appendChild(un);
+	var e=document.createElement("h3");
+	e.textContent="Education details";
+	right.appendChild(e);
+	e.appendChild(document.createElement("HR"));
+    var un=document.createElement("ul");
+    right.appendChild(un);
+
 for(var i=0;i<education.length;i++) {
-	var l=document.createElement("li");
+	var l=document.createElement("h4");
 	l.textContent=education[i].course;
 	un.appendChild(l);
 	var l1=document.createElement("li");
@@ -51,5 +61,30 @@ for(var i=0;i<education.length;i++) {
 	var l2=document.createElement("li");
 	l2.textContent=education[i].per;
 	un.appendChild(l2);
-}	
+}
+}
+function skill(skilldata){
+	var s=document.createElement("div");
+	s.classList.add("sset");
+	right.appendChild(s);
+   	var head=document.createElement("h4");
+	head.textContent="Skills Set";
+	s.appendChild(head);
+    //s.appendChild(document.createElement("HR"));
+    var t=document.createElement("table");
+    var tabledata="";
+    for(var i=0;i<skilldata.length;i++){
+    	tabledata+="<tr><td>"+skilldata[i].title+"</td><td>"+skilldata[i].output+"</td></tr>";
+    	t.innerHTML=tabledata;
+    }
+    head.appendChild(t);
+}
+function carr(career){
+	var head1=document.createElement("h1");
+	head1.textContent="career Objective";
+	right.appendChild(head1);
+	var para=document.createElement("p");
+	para.textContent=career.text;
+    right.appendChild(para);
+
 }

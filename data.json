@@ -1,7 +1,7 @@
 {
 	"details":{
 		"name":"hari",
-		"image":"gh.jpg",
+		"image":"ghimage.png",
 		"phone":"1122334455",
 		"email":"harikaginjupalli@gmail.com"
 	},
@@ -10,7 +10,7 @@
 {
 	"course":"B.Tech(CSE)",
 	"college":"MIC college",
-	"per":"93.4"
+	"per":"83.4"
 
 },
 {
@@ -20,8 +20,25 @@
 },
 {
 	"course":"SSC",
-	"college":"new vision",
+	"college":"new vision school",
 	"per":"98"
 }
-]
+],
+"skills":[
+	{
+	"title":"Programming Languages",
+	"output":[
+		"C","C++","Java","Python"
+	]
+	},
+	{
+		"title":"Operating systems",
+		"output":[
+			"Windows","Linux","MAC"
+		]
+	}
+],
+"Career":{
+	"text":"To associate with organisation and utilise my technical skills with my friends and maintain good performance and team work in workshop"
+}
 }
