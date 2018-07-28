@@ -32,10 +32,10 @@ left.appendChild(image);
 var name=document.createElement("h2");
 name.textContent=MIC.name;
 left.appendChild(name);
-var email=document.createElement("h2");
+var email=document.createElement("h3");
 email.textContent=MIC.email;
 left.appendChild(email);
-var phone=document.createElement("h2");
+var phone=document.createElement("h4");
 phone.textContent=MIC.phone;
 left.appendChild(phone);
 }

@@ -12,7 +12,7 @@ h3{
 }
 .left{
 	width:50%;
-	border:3px solid pink;
+	border:6px solid pink;
 	box-shadow:3px 3px 3px white;
 	margin:1%;
 	padding:1%;
@@ -45,15 +45,15 @@ h3{
 		flex-align:center;
 	}
 	.left{
-	width:70%;
-	border:3px solid pink;
+	width:50%;
+	border:6px solid pink;
 	box-shadow:3px 3px 3px white;
 	margin:1%;
 	padding:1%;
 	background-color:white;
 }
 .right{
-	width:30%;
+	width:50%;
 	border:6px solid pink;
 	box-shadow:3px 3px 3px white;
 	margin:1%;
